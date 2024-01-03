@@ -1,0 +1,64 @@
+.floating-assistant {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+  }
+  
+  .assistant-dialogue {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    position: relative; /* To position the after element */
+  }
+  
+  .assistant-dialogue::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Half of the height to move it on top of the circle */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  
+  .assistant-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .assistant-button {
+    background-color: #ff4500;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

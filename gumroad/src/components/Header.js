@@ -1,15 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-
 const Header = () => {
   return (
-    <header>
-      {/* Logo and Navigation here */}
-      <nav>
-        {/* Nav items here */}
-      </nav>
-      {/* Login/Start Selling buttons here */}
+    <header className="header">
+      <img src="/gumroad_logo.png" alt="Gumroad Logo" />
+      {/* other header content */}
     </header>
   );
 };

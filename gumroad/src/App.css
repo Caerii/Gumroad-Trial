@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+/* Set default font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Specific class font-override */
+.dashboard-item {
+  font-family: 'Mabry Pro', sans-serif;
+}
+
+/* Other specific classes */
+.palanquin-class {
+  font-family: 'Palanquin', sans-serif;
+}
+
+.abcdiatype-class {
+  font-family: 'ABCDiatype', sans-serif;
+}
+
