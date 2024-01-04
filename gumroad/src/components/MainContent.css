@@ -1,0 +1,10 @@
+.main-content {
+    padding: 20px;
+    padding-left: 230px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Aligns items to the start (left) */
+    
+    /* Add styles to match the mockup */
+  }
+  

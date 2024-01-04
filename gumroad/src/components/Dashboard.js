@@ -1,24 +1,20 @@
+// Dashboard.js
 import React from 'react';
-import './Dashboard.css';
 import Sidebar from './Sidebar';
-import FloatingAssistant from './FloatingAssistant';
-import WelcomeBanner from './WelcomeBanner';
-
 import Header from './Header';
+import MainContent from './MainContent'; // A new component for the main content area
+import FloatingAssistant from './FloatingAssistant';
 import Footer from './Footer';
+import './Dashboard.css';
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <Header />
-      <Sidebar />
-      <WelcomeBanner />
-      <main className="dashboard-main">
-        
-        {/* Include components for Welcome Banner, Notification, etc. */}
-      </main>
-      <FloatingAssistant />
-      <Footer />
+      {/* <Header /> */}
+      {/* <Sidebar /> */}
+      {/* <MainContent /> */}
+      {/* <FloatingAssistant /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

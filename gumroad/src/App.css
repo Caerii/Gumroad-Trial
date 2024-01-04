@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack 'em vertically */
+  min-height: 100vh; /* Full viewport height */
 }
 
 .App-logo {
@@ -26,6 +28,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.content-area {
+  display: flex;
+  height: calc(100vh - /* height of header and footer */);
 }
 
 @keyframes App-logo-spin {
@@ -55,4 +62,5 @@ body {
 .abcdiatype-class {
   font-family: 'ABCDiatype', sans-serif;
 }
+
 

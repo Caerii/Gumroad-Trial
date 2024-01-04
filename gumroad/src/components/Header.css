@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff; /* Adjust if needed */
+    padding: 3rem 1.5rem;
+    background-color: #; /* Adjust if needed */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
@@ -20,7 +20,7 @@
   }
 
   .header img {
-    height: 50px;
+    height: 15px;
     /* other styling */
   }
   

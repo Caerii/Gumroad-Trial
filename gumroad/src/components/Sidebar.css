@@ -1,10 +1,60 @@
+/* Sidebar.css */
 .sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #000; /* Match the dark theme */
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  width: 120px;
+  height: 100vh;
+  background-color: #000; /* Dark theme color as per mockup */
+  color: #FFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* Align items to the start of the sidebar */
+  box-shadow: 4px 0px 10px 0px rgba(0,0,0,0.2); /* Optional: adds depth */
+  position: fixed; /* Keep sidebar in place when scrolling */
+
+}
+
+.sidebar-logo {
+    max-width: 100%; /* Ensures the logo is responsive and fits the sidebar */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    padding: 3rem 0rem;
   }
-  
+
+  /* Sidebar.css */
+.logo-link {
+  display: block; /* Ensures the link encompasses the logo image */
+  margin-bottom: 20px; /* Adjust the space below the logo as needed */
+  text-align: center; /* Center the logo if sidebar items are centered */
+}
+
+.sidebar-item {
+  padding: 10px 15px;
+  color: #FFF; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 16px; /* Adjust as per your mockup */
+  font-weight: medium; /* Optional: if you want bold text */
+  margin-bottom: 10px; /* Space between items */
+  border-left: 3px solid transparent; /* For highlighting active item */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.sidebar-item:hover, .sidebar-item.active {
+  background-color: #1A1A1A; /* Slightly lighter than sidebar bg on hover */
+  border-left: 3px solid orange; /* Highlight color for active item */
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto; /* Allows scrolling on small screens */
+  }
+
+  .sidebar-item {
+    display: inline-block; /* Line up items in a row on small screens */
+    margin-right: 10px; /* Space between items horizontally */
+  }
+}
